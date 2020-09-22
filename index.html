@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+<title>お絵かきロジック（by What here area team）</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--<meta http-equiv="refresh" content="3" >-->
+</head>
+<body>
+<div id="picross">
+<div></div>
+<!-- left -->
+<span>1 1</span>
+<span>2 2</span>
+<span>1 1 3 1 1</span>
+<span>3 1 1 1 1</span>
+<span>1 1 1 1 1</span>
+<span>1 1 1 1 1</span>
+<span>1 3 3</span>
+<span>0</span>
+<span>5 1</span>
+<span>1 1</span>
+<span>1 1 1 3 3</span>
+<span>1 1 1 1 1 1 1</span>
+<span>1 1 1 1 1 3</span>
+<span>1 1 1 1 1 1</span>
+<span>1 3 3 3</span>
+<!-- top -->
+<span>1</span>
+<span>2 1</span>
+<span>3 7</span>
+<span>4 1</span>
+<span>3 1 5</span>
+<span>2 1</span>
+<span>5 5</span>
+<span>1 1</span>
+<span>5 7</span>
+<span>1 1</span>
+<span>5 5</span>
+<span>1</span>
+<span>5 5</span>
+<span>1 1 1</span>
+<span>3 1</span>
+<!-- main -->
+<input type="checkbox" id="one-1"><label for="one-1"></label>
+<input type="checkbox" id="one-2" checked><label for="one-2"></label>
+<input type="checkbox" id="one-3"><label for="one-3"></label>
+<input type="checkbox" id="one-4"><label for="one-4"></label>
+<input type="checkbox" id="one-5"><label for="one-5"></label>
+<input type="checkbox" id="one-6" checked><label for="one-6"></label>
+<input type="checkbox" id="one-7"><label for="one-7"></label>
+<input type="checkbox" id="one-8"><label for="one-8"></label>
+<input type="checkbox" id="one-9"><label for="one-9"></label>
+<input type="checkbox" id="one-10"><label for="one-10"></label>
+<input type="checkbox" id="one-11"><label for="one-11"></label>
+<input type="checkbox" id="one-12"><label for="one-12"></label>
+<input type="checkbox" id="one-13"><label for="one-13"></label>
+<input type="checkbox" id="one-14"><label for="one-14"></label>
+<input type="checkbox" id="one-15"><label for="one-15"></label>
+<input type="checkbox" id="two-1"><label for="two-1"></label>
+<input type="checkbox" id="two-2" checked><label for="two-2"></label>
+<input type="checkbox" id="two-3" checked><label for="two-3"></label>
+<input type="checkbox" id="two-4"><label for="two-4"></label>
+<input type="checkbox" id="two-5" checked><label for="two-5"></label>
+<input type="checkbox" id="two-6" checked><label for="two-6"></label>
+<input type="checkbox" id="two-7"><label for="two-7"></label>
+<input type="checkbox" id="two-8"><label for="two-8"></label>
+<input type="checkbox" id="two-9"><label for="two-9"></label>
+<input type="checkbox" id="two-10"><label for="two-10"></label>
+<input type="checkbox" id="two-11"><label for="two-11"></label>
+<input type="checkbox" id="two-12"><label for="two-12"></label>
+<input type="checkbox" id="two-13"><label for="two-13"></label>
+<input type="checkbox" id="two-14"><label for="two-14"></label>
+<input type="checkbox" id="two-15"><label for="two-15"></label>
+<input type="checkbox" id="three-1"><label for="three-1"></label>
+<input type="checkbox" id="three-2"><label for="three-2"></label>
+<input type="checkbox" id="three-3" checked><label for="three-3"></label>
+<input type="checkbox" id="three-4"><label for="three-4"></label>
+<input type="checkbox" id="three-5" checked><label for="three-5"></label>
+<input type="checkbox" id="three-6"><label for="three-6"></label>
+<input type="checkbox" id="three-7" checked><label for="three-7"></label>
+<input type="checkbox" id="three-8" checked><label for="three-8"></label>
+<input type="checkbox" id="three-9" checked><label for="three-9"></label>
+<input type="checkbox" id="three-10"><label for="three-10"></label>
+<input type="checkbox" id="three-11" checked><label for="three-11"></label>
+<input type="checkbox" id="three-12"><label for="three-12"></label>
+<input type="checkbox" id="three-13" checked><label for="three-13"></label>
+<input type="checkbox" id="three-14"><label for="three-14"></label>
+<input type="checkbox" id="three-15"><label for="three-15"></label>
+<input type="checkbox" id="four-1"><label for="four-1"></label>
+<input type="checkbox" id="four-2"><label for="four-2"></label>
+<input type="checkbox" id="four-3" checked><label for="four-3"></label>
+<input type="checkbox" id="four-4" checked><label for="four-4"></label>
+<input type="checkbox" id="four-5" checked><label for="four-5"></label>
+<input type="checkbox" id="four-6"><label for="four-6"></label>
+<input type="checkbox" id="four-7" checked><label for="four-7"></label>
+<input type="checkbox" id="four-8"><label for="four-8"></label>
+<input type="checkbox" id="four-9" checked><label for="four-9"></label>
+<input type="checkbox" id="four-10"><label for="four-10"></label>
+<input type="checkbox" id="four-11" checked><label for="four-11"></label>
+<input type="checkbox" id="four-12"><label for="four-12"></label>
+<input type="checkbox" id="four-13" checked><label for="four-13"></label>
+<input type="checkbox" id="four-14"><label for="four-14"></label>
+<input type="checkbox" id="four-15"><label for="four-15"></label>
+<input type="checkbox" id="five-1"><label for="five-1"></label>
+<input type="checkbox" id="five-2"><label for="five-2"></label>
+<input type="checkbox" id="five-3"><label for="five-3"></label>
+<input type="checkbox" id="five-4" checked><label for="five-4"></label>
+<input type="checkbox" id="five-5"><label for="five-5"></label>
+<input type="checkbox" id="five-6"><label for="five-6"></label>
+<input type="checkbox" id="five-7" checked><label for="five-7"></label>
+<input type="checkbox" id="five-8"><label for="five-8"></label>
+<input type="checkbox" id="five-9" checked><label for="five-9"></label>
+<input type="checkbox" id="five-10"><label for="five-10"></label>
+<input type="checkbox" id="five-11" checked><label for="five-11"></label>
+<input type="checkbox" id="five-12"><label for="five-12"></label>
+<input type="checkbox" id="five-13" checked><label for="five-13"></label>
+<input type="checkbox" id="five-14"><label for="five-14"></label>
+<input type="checkbox" id="five-15"><label for="five-15"></label>
+<input type="checkbox" id="six-1"><label for="six-1"></label>
+<input type="checkbox" id="six-2"><label for="six-2"></label>
+<input type="checkbox" id="six-3"><label for="six-3"></label>
+<input type="checkbox" id="six-4" checked><label for="six-4"></label>
+<input type="checkbox" id="six-5"><label for="six-5"></label>
+<input type="checkbox" id="six-6"><label for="six-6"></label>
+<input type="checkbox" id="six-7" checked><label for="six-7"></label>
+<input type="checkbox" id="six-8"><label for="six-8"></label>
+<input type="checkbox" id="six-9" checked><label for="six-9"></label>
+<input type="checkbox" id="six-10"><label for="six-10"></label>
+<input type="checkbox" id="six-11" checked><label for="six-11"></label>
+<input type="checkbox" id="six-12"><label for="six-12"></label>
+<input type="checkbox" id="six-13" checked><label for="six-13"></label>
+<input type="checkbox" id="six-14"><label for="six-14"></label>
+<input type="checkbox" id="six-15"><label for="six-15"></label>
+<input type="checkbox" id="seven-1"><label for="seven-1"></label>
+<input type="checkbox" id="seven-2"><label for="seven-2"></label>
+<input type="checkbox" id="seven-3"><label for="seven-3"></label>
+<input type="checkbox" id="seven-4" checked><label for="seven-4"></label>
+<input type="checkbox" id="seven-5"><label for="seven-5"></label>
+<input type="checkbox" id="seven-6"><label for="seven-6"></label>
+<input type="checkbox" id="seven-7" checked><label for="seven-7"></label>
+<input type="checkbox" id="seven-8" checked><label for="seven-8"></label>
+<input type="checkbox" id="seven-9" checked><label for="seven-9"></label>
+<input type="checkbox" id="seven-10"><label for="seven-10"></label>
+<input type="checkbox" id="seven-11" checked><label for="seven-11"></label>
+<input type="checkbox" id="seven-12" checked><label for="seven-12"></label>
+<input type="checkbox" id="seven-13" checked><label for="seven-13"></label>
+<input type="checkbox" id="seven-14"><label for="seven-14"></label>
+<input type="checkbox" id="seven-15"><label for="seven-15"></label>
+<input type="checkbox" id="eight-1"><label for="eight-1"></label>
+<input type="checkbox" id="eight-2"><label for="eight-2"></label>
+<input type="checkbox" id="eight-3"><label for="eight-3"></label>
+<input type="checkbox" id="eight-4"><label for="eight-4"></label>
+<input type="checkbox" id="eight-5"><label for="eight-5"></label>
+<input type="checkbox" id="eight-6"><label for="eight-6"></label>
+<input type="checkbox" id="eight-7"><label for="eight-7"></label>
+<input type="checkbox" id="eight-8"><label for="eight-8"></label>
+<input type="checkbox" id="eight-9"><label for="eight-9"></label>
+<input type="checkbox" id="eight-10"><label for="eight-10"></label>
+<input type="checkbox" id="eight-11"><label for="eight-11"></label>
+<input type="checkbox" id="eight-12"><label for="eight-12"></label>
+<input type="checkbox" id="eight-13"><label for="eight-13"></label>
+<input type="checkbox" id="eight-14"><label for="eight-14"></label>
+<input type="checkbox" id="eight-15"><label for="eight-15"></label>
+<input type="checkbox" id="nine-1" checked><label for="nine-1"></label>
+<input type="checkbox" id="nine-2" checked><label for="nine-2"></label>
+<input type="checkbox" id="nine-3" checked><label for="nine-3"></label>
+<input type="checkbox" id="nine-4" checked><label for="nine-4"></label>
+<input type="checkbox" id="nine-5" checked><label for="nine-5"></label>
+<input type="checkbox" id="nine-6"><label for="nine-6"></label>
+<input type="checkbox" id="nine-7"><label for="nine-7"></label>
+<input type="checkbox" id="nine-8"><label for="nine-8"></label>
+<input type="checkbox" id="nine-9" checked><label for="nine-9"></label>
+<input type="checkbox" id="nine-10"><label for="nine-10"></label>
+<input type="checkbox" id="nine-11"><label for="nine-11"></label>
+<input type="checkbox" id="nine-12"><label for="nine-12"></label>
+<input type="checkbox" id="nine-13"><label for="nine-13"></label>
+<input type="checkbox" id="nine-14"><label for="nine-14"></label>
+<input type="checkbox" id="nine-15"><label for="nine-15"></label>
+<input type="checkbox" id="ten-1"><label for="ten-1"></label>
+<input type="checkbox" id="ten-2"><label for="ten-2"></label>
+<input type="checkbox" id="ten-3" checked><label for="ten-3"></label>
+<input type="checkbox" id="ten-4"><label for="ten-4"></label>
+<input type="checkbox" id="ten-5"><label for="ten-5"></label>
+<input type="checkbox" id="ten-6"><label for="ten-6"></label>
+<input type="checkbox" id="ten-7"><label for="ten-7"></label>
+<input type="checkbox" id="ten-8"><label for="ten-8"></label>
+<input type="checkbox" id="ten-9" checked><label for="ten-9"></label>
+<input type="checkbox" id="ten-10"><label for="ten-10"></label>
+<input type="checkbox" id="ten-11"><label for="ten-11"></label>
+<input type="checkbox" id="ten-12"><label for="ten-12"></label>
+<input type="checkbox" id="ten-13"><label for="ten-13"></label>
+<input type="checkbox" id="ten-14"><label for="ten-14"></label>
+<input type="checkbox" id="ten-15"><label for="ten-15"></label>
+<input type="checkbox" id="eleven-1"><label for="eleven-1"></label>
+<input type="checkbox" id="eleven-2"><label for="eleven-2"></label>
+<input type="checkbox" id="eleven-3" checked><label for="eleven-3"></label>
+<input type="checkbox" id="eleven-4"><label for="eleven-4"></label>
+<input type="checkbox" id="eleven-5" checked><label for="eleven-5"></label>
+<input type="checkbox" id="eleven-6"><label for="eleven-6"></label>
+<input type="checkbox" id="eleven-7" checked><label for="eleven-7"></label>
+<input type="checkbox" id="eleven-8"><label for="eleven-8"></label>
+<input type="checkbox" id="eleven-9" checked><label for="eleven-9"></label>
+<input type="checkbox" id="eleven-10" checked><label for="eleven-10"></label>
+<input type="checkbox" id="eleven-11" checked><label for="eleven-11"></label>
+<input type="checkbox" id="eleven-12"><label for="eleven-12"></label>
+<input type="checkbox" id="eleven-13" checked><label for="eleven-13"></label>
+<input type="checkbox" id="eleven-14" checked><label for="eleven-14"></label>
+<input type="checkbox" id="eleven-15" checked><label for="eleven-15"></label>
+<input type="checkbox" id="twelve-1"><label for="twelve-1"></label>
+<input type="checkbox" id="twelve-2"><label for="twelve-2"></label>
+<input type="checkbox" id="twelve-3" checked><label for="twelve-3"></label>
+<input type="checkbox" id="twelve-4"><label for="twelve-4"></label>
+<input type="checkbox" id="twelve-5" checked><label for="twelve-5"></label>
+<input type="checkbox" id="twelve-6"><label for="twelve-6"></label>
+<input type="checkbox" id="twelve-7" checked><label for="twelve-7"></label>
+<input type="checkbox" id="twelve-8"><label for="twelve-8"></label>
+<input type="checkbox" id="twelve-9" checked><label for="twelve-9"></label>
+<input type="checkbox" id="twelve-10"><label for="twelve-10"></label>
+<input type="checkbox" id="twelve-11" checked><label for="twelve-11"></label>
+<input type="checkbox" id="twelve-12"><label for="twelve-12"></label>
+<input type="checkbox" id="twelve-13" checked><label for="twelve-13"></label>
+<input type="checkbox" id="twelve-14"><label for="twelve-14"></label>
+<input type="checkbox" id="twelve-15" checked><label for="twelve-15"></label>
+<input type="checkbox" id="thirteen-1"><label for="thirteen-1"></label>
+<input type="checkbox" id="thirteen-2"><label for="thirteen-2"></label>
+<input type="checkbox" id="thirteen-3" checked><label for="thirteen-3"></label>
+<input type="checkbox" id="thirteen-4"><label for="thirteen-4"></label>
+<input type="checkbox" id="thirteen-5" checked><label for="thirteen-5"></label>
+<input type="checkbox" id="thirteen-6"><label for="thirteen-6"></label>
+<input type="checkbox" id="thirteen-7" checked><label for="thirteen-7"></label>
+<input type="checkbox" id="thirteen-8"><label for="thirteen-8"></label>
+<input type="checkbox" id="thirteen-9" checked><label for="thirteen-9"></label>
+<input type="checkbox" id="thirteen-10"><label for="thirteen-10"></label>
+<input type="checkbox" id="thirteen-11" checked><label for="thirteen-11"></label>
+<input type="checkbox" id="thirteen-12"><label for="thirteen-12"></label>
+<input type="checkbox" id="thirteen-13" checked><label for="thirteen-13"></label>
+<input type="checkbox" id="thirteen-14" checked><label for="thirteen-14"></label>
+<input type="checkbox" id="thirteen-15" checked><label for="thirteen-15"></label>
+<input type="checkbox" id="fourteen-1"><label for="fourteen-1"></label>
+<input type="checkbox" id="fourteen-2"><label for="fourteen-2"></label>
+<input type="checkbox" id="fourteen-3" checked><label for="fourteen-3"></label>
+<input type="checkbox" id="fourteen-4"><label for="fourteen-4"></label>
+<input type="checkbox" id="fourteen-5" checked><label for="fourteen-5"></label>
+<input type="checkbox" id="fourteen-6"><label for="fourteen-6"></label>
+<input type="checkbox" id="fourteen-7" checked><label for="fourteen-7"></label>
+<input type="checkbox" id="fourteen-8"><label for="fourteen-8"></label>
+<input type="checkbox" id="fourteen-9" checked><label for="fourteen-9"></label>
+<input type="checkbox" id="fourteen-10"><label for="fourteen-10"></label>
+<input type="checkbox" id="fourteen-11" checked><label for="fourteen-11"></label>
+<input type="checkbox" id="fourteen-12"><label for="fourteen-12"></label>
+<input type="checkbox" id="fourteen-13" checked><label for="fourteen-13"></label>
+<input type="checkbox" id="fourteen-14"><label for="fourteen-14"></label>
+<input type="checkbox" id="fourteen-15"><label for="fourteen-15"></label>
+<input type="checkbox" id="fifteen-1"><label for="fifteen-1"></label>
+<input type="checkbox" id="fifteen-2"><label for="fifteen-2"></label>
+<input type="checkbox" id="fifteen-3" checked><label for="fifteen-3"></label>
+<input type="checkbox" id="fifteen-4"><label for="fifteen-4"></label>
+<input type="checkbox" id="fifteen-5" checked><label for="fifteen-5"></label>
+<input type="checkbox" id="fifteen-6" checked><label for="fifteen-6"></label>
+<input type="checkbox" id="fifteen-7" checked><label for="fifteen-7"></label>
+<input type="checkbox" id="fifteen-8"><label for="fifteen-8"></label>
+<input type="checkbox" id="fifteen-9" checked><label for="fifteen-9"></label>
+<input type="checkbox" id="fifteen-10" checked><label for="fifteen-10"></label>
+<input type="checkbox" id="fifteen-11" checked><label for="fifteen-11"></label>
+<input type="checkbox" id="fifteen-12"><label for="fifteen-12"></label>
+<input type="checkbox" id="fifteen-13" checked><label for="fifteen-13"></label>
+<input type="checkbox" id="fifteen-14" checked><label for="fifteen-14"></label>
+<input type="checkbox" id="fifteen-15" checked><label for="fifteen-15"></label>
+<!-- dialog -->
+<input type="checkbox" id="close-completed">
+<div id="completed">
+<div>Congratulations!</div>
+<label for="close-completed">Close</label>
+</div>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
