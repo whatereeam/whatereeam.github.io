@@ -93,7 +93,3 @@ input:checked ~ #completed {
 #completed label:active {
   background:linear-gradient(#e0e0e0, 40%, #909090);
 }
-
-
-
-
