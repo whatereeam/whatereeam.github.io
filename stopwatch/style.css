@@ -385,15 +385,3 @@ li::after {
 #lap10:checked ~ #laptime span:nth-of-type(10) li {
   animation-play-state:paused;
 }
-
-
-
-
-
-
-
-
-
-
-
-
