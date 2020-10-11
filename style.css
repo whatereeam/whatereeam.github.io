@@ -1,0 +1,399 @@
+@charset "UTF-8";
+
+html {
+  background-color:white;
+}
+
+body {
+  background-color:black;
+  width:375px;
+  min-height:667px;
+  height:100vh;
+  margin:auto;
+  color:white;
+  font-family:-apple-system, BlinkMacSystemFont, sans-serif;
+  font-size:16px;
+  font-weight:300;
+  white-space:nowrap;
+  display:flex;
+  flex-direction:column;
+}
+
+input {
+  display:none;
+}
+
+ul {
+  all:unset;
+  position:relative;
+  text-align:center;
+  padding-right:1ch;
+  counter-reset:time -1;
+}
+
+li {
+  all:unset;
+  position:absolute;
+  width:100%;
+  counter-increment:time;
+}
+
+li::after {
+  content:counter(time);
+}
+
+
+@keyframes one-sixth {
+  0% {visibility:visible;}
+  16.66666% {visibility:hidden;}
+  100% {visibility:hidden;}
+}
+@keyframes one-tenth {
+  0% {visibility:visible;}
+  9.99999% {visibility:hidden;}
+  100% {visibility:hidden;}
+}
+
+.time-m-tens li:nth-of-type(1) {
+  animation: one-tenth 6000s 0s infinite;
+}
+.time-m-tens li:nth-of-type(2) {
+  animation: one-tenth 6000s -5400s infinite;
+}
+.time-m-tens li:nth-of-type(3) {
+  animation: one-tenth 6000s -4800s infinite;
+}
+.time-m-tens li:nth-of-type(4) {
+  animation: one-tenth 6000s -4200s infinite;
+}
+.time-m-tens li:nth-of-type(5) {
+  animation: one-tenth 6000s -3600s infinite;
+}
+.time-m-tens li:nth-of-type(6) {
+  animation: one-tenth 6000s -3000s infinite;
+}
+.time-m-tens li:nth-of-type(7) {
+  animation: one-tenth 6000s -2400s infinite;
+}
+.time-m-tens li:nth-of-type(8) {
+  animation: one-tenth 6000s -1800s infinite;
+}
+.time-m-tens li:nth-of-type(9) {
+  animation: one-tenth 6000s -1200s infinite;
+}
+.time-m-tens li:nth-of-type(10) {
+  animation: one-tenth 6000s -600s infinite;
+}
+.time-m-ones li:nth-of-type(1) {
+  animation: one-tenth 600s 0s infinite;
+}
+.time-m-ones li:nth-of-type(2) {
+  animation: one-tenth 600s -540s infinite;
+}
+.time-m-ones li:nth-of-type(3) {
+  animation: one-tenth 600s -480s infinite;
+}
+.time-m-ones li:nth-of-type(4) {
+  animation: one-tenth 600s -420s infinite;
+}
+.time-m-ones li:nth-of-type(5) {
+  animation: one-tenth 600s -360s infinite;
+}
+.time-m-ones li:nth-of-type(6) {
+  animation: one-tenth 600s -300s infinite;
+}
+.time-m-ones li:nth-of-type(7) {
+  animation: one-tenth 600s -240s infinite;
+}
+.time-m-ones li:nth-of-type(8) {
+  animation: one-tenth 600s -180s infinite;
+}
+.time-m-ones li:nth-of-type(9) {
+  animation: one-tenth 600s -120s infinite;
+}
+.time-m-ones li:nth-of-type(10) {
+  animation: one-tenth 600s -60s infinite;
+}
+.time-s-tens li:nth-of-type(1) {
+  animation: one-sixth 60s 0s infinite;
+}
+.time-s-tens li:nth-of-type(2) {
+  animation: one-sixth 60s -50s infinite;
+}
+.time-s-tens li:nth-of-type(3) {
+  animation: one-sixth 60s -40s infinite;
+}
+.time-s-tens li:nth-of-type(4) {
+  animation: one-sixth 60s -30s infinite;
+}
+.time-s-tens li:nth-of-type(5) {
+  animation: one-sixth 60s -20s infinite;
+}
+.time-s-tens li:nth-of-type(6) {
+  animation: one-sixth 60s -10s infinite;›
+}
+.time-s-ones li:nth-of-type(1) {
+  animation: one-tenth 10s 0s infinite;
+}
+.time-s-ones li:nth-of-type(2) {
+  animation: one-tenth 10s -9s infinite;
+}
+.time-s-ones li:nth-of-type(3) {
+  animation: one-tenth 10s -8s infinite;
+}
+.time-s-ones li:nth-of-type(4) {
+  animation: one-tenth 10s -7s infinite;
+}
+.time-s-ones li:nth-of-type(5) {
+  animation: one-tenth 10s -6s infinite;
+}
+.time-s-ones li:nth-of-type(6) {
+  animation: one-tenth 10s -5s infinite;
+}
+.time-s-ones li:nth-of-type(7) {
+  animation: one-tenth 10s -4s infinite;
+}
+.time-s-ones li:nth-of-type(8) {
+  animation: one-tenth 10s -3s infinite;
+}
+.time-s-ones li:nth-of-type(9) {
+  animation: one-tenth 10s -2s infinite;
+}
+.time-s-ones li:nth-of-type(10) {
+  animation: one-tenth 10s -1s infinite;
+}
+.time-s-tenths li:nth-of-type(1) {
+  animation: one-tenth 1s 0s infinite;
+}
+.time-s-tenths li:nth-of-type(2) {
+  animation: one-tenth 1s -0.9s infinite;
+}
+.time-s-tenths li:nth-of-type(3) {
+  animation: one-tenth 1s -0.8s infinite;
+}
+.time-s-tenths li:nth-of-type(4) {
+  animation: one-tenth 1s -0.7s infinite;
+}
+.time-s-tenths li:nth-of-type(5) {
+  animation: one-tenth 1s -0.6s infinite;
+}
+.time-s-tenths li:nth-of-type(6) {
+  animation: one-tenth 1s -0.5s infinite;
+}
+.time-s-tenths li:nth-of-type(7) {
+  animation: one-tenth 1s -0.4s infinite;
+}
+.time-s-tenths li:nth-of-type(8) {
+  animation: one-tenth 1s -0.3s infinite;
+}
+.time-s-tenths li:nth-of-type(9) {
+  animation: one-tenth 1s -0.2s infinite;
+}
+.time-s-tenths li:nth-of-type(10) {
+  animation: one-tenth 1s -0.1s infinite;
+}
+.time-s-hundredths li:nth-of-type(1) {
+  animation: one-tenth 0.1s 0s infinite;
+}
+.time-s-hundredths li:nth-of-type(2) {
+  animation: one-tenth 0.1s -0.09s infinite;
+}
+.time-s-hundredths li:nth-of-type(3) {
+  animation: one-tenth 0.1s -0.08s infinite;
+}
+.time-s-hundredths li:nth-of-type(4) {
+  animation: one-tenth 0.1s -0.07s infinite;
+}
+.time-s-hundredths li:nth-of-type(5) {
+  animation: one-tenth 0.1s -0.06s infinite;
+}
+.time-s-hundredths li:nth-of-type(6) {
+  animation: one-tenth 0.1s -0.05s infinite;
+}
+.time-s-hundredths li:nth-of-type(7) {
+  animation: one-tenth 0.1s -0.04s infinite;
+}
+.time-s-hundredths li:nth-of-type(8) {
+  animation: one-tenth 0.1s -0.03s infinite;
+}
+.time-s-hundredths li:nth-of-type(9) {
+  animation: one-tenth 0.1s -0.02s infinite;
+}
+.time-s-hundredths li:nth-of-type(10) {
+  animation: one-tenth 0.1s -0.01s infinite;
+}
+
+#start-stop:not(:checked) ~ div li {
+  animation-play-state:paused;
+}
+
+
+#time {
+  flex:none;
+  height:375px;
+  box-sizing:border-box;
+  padding-top:190px;
+  text-align:center;
+  font-size:85px;
+  font-weight:200;
+}
+
+
+#buttons {
+  flex:none;
+  height:100px;
+  margin:0 15px;
+  position:relative;
+}
+
+#buttons > * {
+  display:grid;
+  width:85px;
+  height:85px;
+  border-radius:50%;
+  place-items:center;
+  cursor:pointer;
+  position:absolute;
+  text-decoration:none;
+}
+
+#buttons > *::before {
+  content:"";
+  position:absolute;
+  width:77px;
+  height:77px;
+  border-radius:50%;
+  border:2px solid black;
+  color:black;
+}
+
+
+#start-stop:not(:checked) ~ #buttons label[for="start-stop"] {
+  right:0;
+  background-color:rgb(16, 48, 16);
+}
+
+#start-stop:not(:checked) ~ #buttons label[for="start-stop"]:active {
+  background-color:rgb(8, 24, 8);
+}
+
+#start-stop:not(:checked) ~ #buttons label[for="start-stop"]::after {
+  content:"Start";
+  color:#4c4;
+}
+
+#start-stop:checked ~ #buttons label[for="start-stop"] {
+  right:0;
+  background-color:rgb(48, 16, 16);
+}
+
+#start-stop:checked ~ #buttons label[for="start-stop"]:active {
+  background-color:rgb(24, 8, 8);
+}
+
+#start-stop:checked ~ #buttons label[for="start-stop"]::after {
+  content:"Stop";
+  color:#f44;
+}
+
+
+#buttons label[for^="lap"],
+#buttons a {
+  left:0;
+  background-color:rgb(51, 51, 51);
+}
+
+#buttons label[for^="lap"]:active,
+#buttons a:active {
+  background-color:rgb(26, 26, 26);
+}
+
+#buttons label[for^="lap"]::after {
+  content:"Lap";
+}
+
+#buttons a::after {
+  content:"Reset";
+  color:white;
+}
+
+#start-stop:checked ~ #buttons a,
+#lap1:checked ~ #buttons label[for="lap1"],
+#lap2:checked ~ #buttons label[for="lap2"],
+#lap3:checked ~ #buttons label[for="lap3"],
+#lap4:checked ~ #buttons label[for="lap4"],
+#lap5:checked ~ #buttons label[for="lap5"],
+#lap6:checked ~ #buttons label[for="lap6"],
+#lap7:checked ~ #buttons label[for="lap7"],
+#lap8:checked ~ #buttons label[for="lap8"],
+#lap9:checked ~ #buttons label[for="lap9"] {
+  display:none;
+}
+
+#lap10:checked ~ #buttons label[for="lap10"] {
+  pointer-events:none;
+  opacity:0.5;
+}
+
+
+#laptime {
+  flex:auto;
+  overflow-y:auto;
+}
+
+#laptime > div {
+  margin:0 15px;
+  display:flex;
+  flex-direction:column-reverse;
+  border-bottom:1px solid #202020;
+}
+
+#laptime span {
+  border-top:1px solid #202020;
+  padding:11px 0;
+  text-align:right;
+  counter-increment:lap-count;
+}
+
+#laptime span::before {
+  content:"Lap " counter(lap-count);
+  float:left;
+}
+
+#lap1:not(:checked) ~ #laptime span:nth-of-type(2),
+#lap2:not(:checked) ~ #laptime span:nth-of-type(3),
+#lap3:not(:checked) ~ #laptime span:nth-of-type(4),
+#lap4:not(:checked) ~ #laptime span:nth-of-type(5),
+#lap5:not(:checked) ~ #laptime span:nth-of-type(6),
+#lap6:not(:checked) ~ #laptime span:nth-of-type(7),
+#lap7:not(:checked) ~ #laptime span:nth-of-type(8),
+#lap8:not(:checked) ~ #laptime span:nth-of-type(9),
+#lap9:not(:checked) ~ #laptime span:nth-of-type(10) {
+  display:none;
+}
+
+
+#lap1:checked ~ #laptime span:nth-of-type(1) li,
+#lap2:checked ~ #laptime span:nth-of-type(2) li,
+#lap3:checked ~ #laptime span:nth-of-type(3) li,
+#lap4:checked ~ #laptime span:nth-of-type(4) li,
+#lap5:checked ~ #laptime span:nth-of-type(5) li,
+#lap6:checked ~ #laptime span:nth-of-type(6) li,
+#lap7:checked ~ #laptime span:nth-of-type(7) li,
+#lap8:checked ~ #laptime span:nth-of-type(8) li,
+#lap9:checked ~ #laptime span:nth-of-type(9) li,
+#lap10:checked ~ #laptime span:nth-of-type(10) li {
+  animation-play-state:paused;
+}
+
+
+
+
+
+
+
+
+
+
+
+

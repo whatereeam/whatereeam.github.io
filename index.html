@@ -1,15 +1,143 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" href="style.css">
-<title>What here area team</title>
+<title>Stopwatch (by What here area team)</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-<h1>What here area teamの作ったものリスト</h1>
-<ul>
-<li><a href="picross">お絵かきロジック</a></li>
-</ul>
+<input type="checkbox" id="start-stop">
+<input type="checkbox" id="lap1">
+<input type="checkbox" id="lap2">
+<input type="checkbox" id="lap3">
+<input type="checkbox" id="lap4">
+<input type="checkbox" id="lap5">
+<input type="checkbox" id="lap6">
+<input type="checkbox" id="lap7">
+<input type="checkbox" id="lap8">
+<input type="checkbox" id="lap9">
+<input type="checkbox" id="lap10">
+<div id="time"><!--
+ --><ul class="time-m-tens"><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul><!--
+ --><ul class="time-m-ones"><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>:<!--
+ --><ul class="time-s-tens"><li></li><li></li><li></li><li></li><li></li><li></li></ul><!--
+ --><ul class="time-s-ones"><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>.<!--
+ --><ul class="time-s-tenths"><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul><!--
+ --><ul class="time-s-hundredths"><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>
+</div>
+<div id="buttons">
+ <label for="lap10"></label>
+ <label for="lap9"></label>
+ <label for="lap8"></label>
+ <label for="lap7"></label>
+ <label for="lap6"></label>
+ <label for="lap5"></label>
+ <label for="lap4"></label>
+ <label for="lap3"></label>
+ <label for="lap2"></label>
+ <label for="lap1"></label>
+ <a href=""></a>
+ <label for="start-stop"></label>
+</div>
+<div id="laptime">
+ <div>
+  <span><!--
+  --><ul class="time-m-tens"><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul><!--
+  --><ul class="time-m-ones"><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>:<!--
+  --><ul class="time-s-tens"><li></li><li></li><li></li><li></li><li></li><li></li></ul><!--
+  --><ul class="time-s-ones"><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>.<!--
+  --><ul class="time-s-tenths"><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul><!--
+  --><ul class="time-s-hundredths"><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>
+  </span>
+  <span><!--
+  --><ul class="time-m-tens"><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul><!--
+  --><ul class="time-m-ones"><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>:<!--
+  --><ul class="time-s-tens"><li></li><li></li><li></li><li></li><li></li><li></li></ul><!--
+  --><ul class="time-s-ones"><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>.<!--
+  --><ul class="time-s-tenths"><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul><!--
+  --><ul class="time-s-hundredths"><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>
+  </span>
+  <span><!--
+  --><ul class="time-m-tens"><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul><!--
+  --><ul class="time-m-ones"><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>:<!--
+  --><ul class="time-s-tens"><li></li><li></li><li></li><li></li><li></li><li></li></ul><!--
+  --><ul class="time-s-ones"><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>.<!--
+  --><ul class="time-s-tenths"><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul><!--
+  --><ul class="time-s-hundredths"><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>
+  </span>
+  <span><!--
+  --><ul class="time-m-tens"><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul><!--
+  --><ul class="time-m-ones"><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>:<!--
+  --><ul class="time-s-tens"><li></li><li></li><li></li><li></li><li></li><li></li></ul><!--
+  --><ul class="time-s-ones"><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>.<!--
+  --><ul class="time-s-tenths"><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul><!--
+  --><ul class="time-s-hundredths"><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>
+  </span>
+  <span><!--
+  --><ul class="time-m-tens"><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul><!--
+  --><ul class="time-m-ones"><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>:<!--
+  --><ul class="time-s-tens"><li></li><li></li><li></li><li></li><li></li><li></li></ul><!--
+  --><ul class="time-s-ones"><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>.<!--
+  --><ul class="time-s-tenths"><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul><!--
+  --><ul class="time-s-hundredths"><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>
+  </span>
+  <span><!--
+  --><ul class="time-m-tens"><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul><!--
+  --><ul class="time-m-ones"><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>:<!--
+  --><ul class="time-s-tens"><li></li><li></li><li></li><li></li><li></li><li></li></ul><!--
+  --><ul class="time-s-ones"><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>.<!--
+  --><ul class="time-s-tenths"><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul><!--
+  --><ul class="time-s-hundredths"><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>
+  </span>
+  <span><!--
+  --><ul class="time-m-tens"><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul><!--
+  --><ul class="time-m-ones"><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>:<!--
+  --><ul class="time-s-tens"><li></li><li></li><li></li><li></li><li></li><li></li></ul><!--
+  --><ul class="time-s-ones"><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>.<!--
+  --><ul class="time-s-tenths"><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul><!--
+  --><ul class="time-s-hundredths"><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>
+  </span>
+  <span><!--
+  --><ul class="time-m-tens"><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul><!--
+  --><ul class="time-m-ones"><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>:<!--
+  --><ul class="time-s-tens"><li></li><li></li><li></li><li></li><li></li><li></li></ul><!--
+  --><ul class="time-s-ones"><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>.<!--
+  --><ul class="time-s-tenths"><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul><!--
+  --><ul class="time-s-hundredths"><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>
+  </span>
+  <span><!--
+  --><ul class="time-m-tens"><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul><!--
+  --><ul class="time-m-ones"><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>:<!--
+  --><ul class="time-s-tens"><li></li><li></li><li></li><li></li><li></li><li></li></ul><!--
+  --><ul class="time-s-ones"><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>.<!--
+  --><ul class="time-s-tenths"><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul><!--
+  --><ul class="time-s-hundredths"><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>
+  </span>
+  <span><!--
+  --><ul class="time-m-tens"><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul><!--
+  --><ul class="time-m-ones"><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>:<!--
+  --><ul class="time-s-tens"><li></li><li></li><li></li><li></li><li></li><li></li></ul><!--
+  --><ul class="time-s-ones"><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>.<!--
+  --><ul class="time-s-tenths"><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul><!--
+  --><ul class="time-s-hundredths"><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>
+  </span>
+ </div>
+</div>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
