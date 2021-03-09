@@ -1,0 +1,383 @@
+@charset "UTF-8";
+
+body {
+  font-size:2px; /* 親要素のフォントサイズを変えるとサーバルちゃんの大きさが変わります */
+}
+
+
+#serval {
+  position:relative;
+  width:120em;
+  height:170em;
+  margin:auto;
+}
+
+
+#serval-hair-outline {
+  position:absolute;
+  top:53em;
+  left:0;
+  right:0;
+  margin:auto;
+  z-index:-2;
+  width:115em;
+  height:115em;
+  border:1em solid black;
+  border-bottom-color:transparent;
+  border-radius:50% 50% 30% 30%/60% 60% 40% 40%;
+  background-color:transparent;
+  overflow:hidden;
+}
+
+#serval-hair-outline-inside {
+  position:absolute;
+  top:0;
+  left:-48em;
+  width:95em;
+  height:100em;
+  border:58em solid #fac58b;
+  border-radius:50%;
+  background-color:transparent;
+}
+
+
+#serval-hair-back-side {
+  position:absolute;
+  top:130em;
+  left:0;
+  right:0;
+  margin:auto;
+  z-index:-1;
+  width:95em;
+  height:40em;
+  border:1em solid black;
+  border-top:none;
+  border-bottom-color:transparent;
+  border-radius:0 0 40em 40em;
+  background-color:transparent;
+  overflow:hidden;
+}
+
+#serval-hair-back-side-inside {
+  position:absolute;
+  top:-36em;
+  left:-36em;
+  width:87em;
+  height:100em;
+  border:40em solid #fac58b;
+  border-radius:50%;
+  background-color:transparent;
+}
+
+
+#serval-hair-side {
+  position:absolute;
+  top:56em;
+  left:0;
+  right:0;
+  margin:auto;
+  z-index:2;
+  width:95em;
+  height:90em;
+  border:1em solid black;
+  border-top-color:transparent;
+  border-bottom-color:transparent;
+  border-radius:50%;
+  background-color:transparent;
+  overflow:hidden;
+}
+
+#serval-hair-side-inside {
+  position:absolute;
+  top:-6em;
+  left:-9em;
+  width:73em;
+  height:100em;
+  border:20em solid #fac58b;
+  border-radius:50%;
+  background-color:transparent;
+}
+
+
+#serval-hair-front-side {
+  position:absolute;
+  top:86em;
+  left:0;
+  right:0;
+  margin:auto;
+  z-index:4;
+  width:60em;
+  height:33em;
+  border:1em solid black;
+  border-top:none;
+  border-bottom-color:transparent;
+  border-radius:0 0 33em 33em;
+  background-color:transparent;
+  box-shadow: 0 -17em #fac58b;
+  overflow:hidden;
+}
+
+#serval-hair-front-side-inside {
+  position:absolute;
+  top:-40em;
+  left:-8em;
+  width:44em;
+  height:100em;
+  border:16em solid #fac58b;
+  border-radius:50%;
+  background-color:transparent;
+}
+
+
+#serval-hair-outline-inside::before,
+#serval-hair-back-side-inside::before,
+#serval-hair-side-inside::before,
+#serval-hair-front-side-inside::before {
+  content:"";
+  display:block;
+  border:1em solid black;
+  width:100%;
+  height:100%;
+  border-radius:50%;
+  box-sizing:border-box;
+}
+
+
+#serval-hair-front {
+  position:absolute;
+  top:72em;
+  left:39em;
+  z-index:3;
+  width:37em;
+  height:41em;
+  border:1em solid black;
+  border-radius:15em 8em 0 35em / 15em 38em 0 30em;
+  background-color:#fac58b;
+  transform:rotate(18deg);
+}
+
+
+#serval-hair-m::before,
+#serval-hair-m::after {
+  content:"";
+  position:absolute;
+  top:71em;
+  z-index:5;
+  width:12em;
+  height:12em;
+  border-top:3em solid #654e44;
+  border-left:3em solid #654e44;
+  transform:rotate(45deg);
+}
+
+#serval-hair-m::before {
+  left:44em;
+}
+
+#serval-hair-m::after {
+  right:44em;
+}
+
+
+#serval-ear-right,
+#serval-ear-left {
+  position:absolute;
+  top:2em;
+  z-index:1;
+  width:40em;
+  height:80em;
+  border:1em solid black;
+  background:linear-gradient(#5b463f, #fac58b 35%);
+}
+
+#serval-ear-right {
+  left:16em;
+  border-radius:32em 10em 0 10em / 60em 60em 0 20em;
+  transform:rotate(-9deg);
+}
+
+#serval-ear-left {
+  right:16em;
+  border-radius:10em 32em 10em 0 / 60em 60em 20em 0;
+  transform:rotate(9deg);
+}
+
+
+#serval-ear-right-inside,
+#serval-ear-left-inside {
+  position:absolute;
+  top:5em;
+  width:30em;
+  height:75em;
+  border:1em solid black;
+  background-color:#ffffff;
+}
+
+#serval-ear-right-inside {
+  left:1em;
+  border-radius:25em 7em 0 15em / 47em 50em 10em 30em;
+  transform:rotate(5deg);
+}
+
+#serval-ear-left-inside {
+  right:1em;
+  border-radius:7em 25em 15em 0 / 50em 47em 30em 10em;
+  transform:rotate(-5deg);
+}
+
+
+#serval-face-outline {
+  position:absolute;
+  top:70em;
+  left:0;
+  right:0;
+  margin:auto;
+  z-index:1;
+  width:75em;
+  height:90em;
+  border:1em solid black;
+  border-radius:50%/30%;
+  background-color:#fee0d6;
+}
+
+#serval-human-ear-right,
+#serval-human-ear-left {
+  position:absolute;
+  top:113em;
+  z-index:0;
+  width:18em;
+  height:22em;
+  border:1em solid black;
+  border-radius:50%;
+  background-color:#fee0d6;
+}
+
+#serval-human-ear-right {
+  left:16em;
+}
+
+#serval-human-ear-left {
+  right:16em;
+}
+
+
+#serval-eyebrow-right,
+#serval-eyebrow-left {
+  position:absolute;
+  top:30em;
+  width:25em;
+  height:20em;
+  border:1em solid transparent;
+  border-top-color:black;
+  border-radius:50%;
+}
+
+#serval-eyebrow-right {
+  left:3em;
+  transform:rotate(-10deg);
+}
+ 
+#serval-eyebrow-left {
+  right:3em;
+  transform:rotate(10deg);
+}
+
+
+#serval-eyelashes-right,
+#serval-eyelashes-left {
+  position:absolute;
+  top:39em;
+  z-index:1;
+  width:20em;
+  height:24em;
+  border-radius:50%;
+  background: conic-gradient(from -38deg,
+    black 0deg 4deg, transparent 4deg 24deg,
+    black 24deg 28deg, transparent 28deg 48deg,
+    black 48deg 52deg, transparent 52deg 72deg,
+    black 72deg 76deg, transparent 76deg);
+}
+
+#serval-eye-right,
+#serval-eye-left {
+  position:absolute;
+  top:40em;
+  z-index:2;
+  width:20em;
+  height:24em;
+  border-top:2em solid black;
+  border-radius:50%;
+  background-color:#ffffff;
+  overflow:hidden;
+}
+
+#serval-eyelashes-right,
+#serval-eye-right {
+  left:7em;
+}
+
+#serval-eyelashes-left,
+#serval-eye-left {
+  right:7em;
+}
+
+
+.serval-iris {
+  position:absolute;
+  top:-1em;
+  left:1em;
+  width:12em;
+  height:22em;
+  border:1em solid black;
+  border-radius:50%;
+  background-color:#f6ca79;
+}
+
+.serval-iris::before {
+  content:"";
+  position:absolute;
+  top:2em;
+  left:2em;
+  z-index:2;
+  width:4em;
+  height:5em;
+  border-radius:50%;
+  background-color:#ffffff;
+}
+
+.serval-pupil {
+  position:absolute;
+  top:1em;
+  left:1em;
+  z-index:1;
+  width:9em;
+  height:16em;
+  border-radius:50%;
+  background-color:#42230b;
+}
+
+
+#serval-nose {
+  position:absolute;
+  top:65em;
+  left:0;
+  right:0;
+  margin:auto;
+  width:1em;
+  height:1em;
+  border-left:1em solid black;
+}
+
+
+#serval-mouth {
+  position:absolute;
+  top:74em;
+  left:0;
+  right:0;
+  margin:auto;
+  width:17em;
+  height:10em;
+  border:1em solid black;
+  border-radius:50% / 10% 10% 90% 90%;
+  background-color:#f49da6;
+}
