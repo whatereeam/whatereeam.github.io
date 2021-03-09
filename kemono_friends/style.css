@@ -24,18 +24,22 @@ body {
   height:115em;
   border:1em solid black;
   border-bottom-color:transparent;
-  border-radius:50% 50% 30% 30%/60% 60% 40% 40%;
+  border-radius:50% 50% 30% 30% / 60% 60% 40% 40%;
   background-color:transparent;
   overflow:hidden;
 }
 
-#serval-hair-outline-inside {
+#serval-hair-outline::before {
+  content:"";
   position:absolute;
-  top:0;
-  left:-48em;
-  width:95em;
+  top:59em;
+  left:0;
+  right:0;
+  margin:auto;
+  width:93em;
   height:100em;
-  border:58em solid #fac58b;
+  box-shadow:0 0 0 115em #fac58b;
+  border:1em solid black;
   border-radius:50%;
   background-color:transparent;
 }
@@ -58,13 +62,17 @@ body {
   overflow:hidden;
 }
 
-#serval-hair-back-side-inside {
+#serval-hair-back-side::before {
+  content:"";
   position:absolute;
-  top:-36em;
-  left:-36em;
-  width:87em;
+  top:4em;
+  left:0;
+  right:0;
+  margin:auto;
+  width:85em;
   height:100em;
-  border:40em solid #fac58b;
+  box-shadow:0 0 0 95em #fac58b;
+  border:1em solid black;
   border-radius:50%;
   background-color:transparent;
 }
@@ -87,13 +95,17 @@ body {
   overflow:hidden;
 }
 
-#serval-hair-side-inside {
+#serval-hair-side::before {
+  content:"";
   position:absolute;
-  top:-6em;
-  left:-9em;
-  width:73em;
+  top:13em;
+  left:0;
+  right:0;
+  margin:auto;
+  width:70em;
   height:100em;
-  border:20em solid #fac58b;
+  box-shadow:0 0 0 95em #fac58b;
+  border:1em solid black;
   border-radius:50%;
   background-color:transparent;
 }
@@ -117,29 +129,19 @@ body {
   overflow:hidden;
 }
 
-#serval-hair-front-side-inside {
+#serval-hair-front-side::before {
+  content:"";
   position:absolute;
-  top:-40em;
-  left:-8em;
-  width:44em;
+  top:-25em;
+  left:0;
+  right:0;
+  margin:auto;
+  width:42em;
   height:100em;
-  border:16em solid #fac58b;
+  box-shadow:0 0 0 60em #fac58b;
+  border:1em solid black;
   border-radius:50%;
   background-color:transparent;
-}
-
-
-#serval-hair-outline-inside::before,
-#serval-hair-back-side-inside::before,
-#serval-hair-side-inside::before,
-#serval-hair-front-side-inside::before {
-  content:"";
-  display:block;
-  border:1em solid black;
-  width:100%;
-  height:100%;
-  border-radius:50%;
-  box-sizing:border-box;
 }
 
 
@@ -203,8 +205,9 @@ body {
 }
 
 
-#serval-ear-right-inside,
-#serval-ear-left-inside {
+#serval-ear-right::before,
+#serval-ear-left::before {
+  content:"";
   position:absolute;
   top:5em;
   width:30em;
@@ -213,20 +216,20 @@ body {
   background-color:#ffffff;
 }
 
-#serval-ear-right-inside {
+#serval-ear-right::before {
   left:1em;
   border-radius:25em 7em 0 15em / 47em 50em 10em 30em;
   transform:rotate(5deg);
 }
 
-#serval-ear-left-inside {
+#serval-ear-left::before {
   right:1em;
   border-radius:7em 25em 15em 0 / 50em 47em 30em 10em;
   transform:rotate(-5deg);
 }
 
 
-#serval-face-outline {
+#serval-face {
   position:absolute;
   top:70em;
   left:0;
